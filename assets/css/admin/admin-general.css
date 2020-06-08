@@ -1,0 +1,47 @@
+/*===== Estilos Generales =====*/
+
+/*=== Fuentes ===*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(239, 239, 241);
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*=== Encabezados de las secciones ===*/
+.encabezado{
+    padding: 15px 17px 15px 77px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 35px;
+}
+
+/*=== Contenido principal ===*/
+main{
+    padding-right: 17px;
+    padding-left: 77px;
+    max-width: 100%;
+    transition: all 300ms;
+}
+.main-move{
+    left: 225px;
+}
+.cont-box{
+    background: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    padding: 20px;
+}

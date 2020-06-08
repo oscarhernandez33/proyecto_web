@@ -1,0 +1,70 @@
+/*=== Estilos del login ===*/
+
+/*=== Estilos de la sección Ingresar ===*/
+.section-login{
+    padding-top: 80px;
+    height: 600px;
+    overflow: visible;
+}
+
+.cont-login{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-login .login{
+    width: 350px;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 2px 1px 24px -5px rgba(0,0,0,0.75);
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login h3{
+    margin-top: 30px;
+}
+
+.login .form-login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.form-login input{
+    width: 275px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(37, 35, 35);
+}
+
+.form-login .input-email{
+    margin-bottom: 25px;
+}
+
+.form-login button{
+    width: 260px;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    background: rgb(236, 33, 50);
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.form-login button:hover{
+    box-shadow: 3px 1px 39px -6px rgba(0,0,0,0.75);
+    background: rgb(228, 52, 52);
+}

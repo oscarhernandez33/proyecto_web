@@ -1,0 +1,35 @@
+/*=== Estilos de la secicon procesar pedido ===*/
+
+/*=== Fuentes ===*/
+
+/*=== Sección de pedido ===*/
+.section-pedido{
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.section-pedido h2{
+    position: relative;
+}
+.section-pedido h2::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: rgb(209, 14, 14);
+    bottom: 0;
+    transform: translate(73%,23px);
+}
+
+.cont-datos-procesar{
+    margin-top: 70px;
+}
+
+/*=== Media Query ===*/
+@media(max-width:765px){
+    .section-pedido{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

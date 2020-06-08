@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+
+        <?php
+            // Cargando las hojas de estilo
+            require_once ("includes/includes_estilos.php");
+        ?>
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body>
+        <?php
+            require_once "partials/header.php";
+        ?>
+        
+
+        <?php
+            // Cargando el footeer
+            require_once "partials/footer.php";
+            // Cargando los Scripts
+            require_once ("includes/includes_script.php");
+        ?>
+        <script src="assets/js/animaciones/animaciones-index.js"></script>
+    </body>
+</html>

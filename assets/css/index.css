@@ -1,0 +1,408 @@
+/*=== Fuentes de texto ===*/
+@import url('https://fonts.googleapis.com/css?family=Inria+Sans&display=swap');
+
+/*=== Titulo de los contenidos ===*/
+.cont{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cont h3{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.cont .line{
+    width: 100px;
+    height: 3px;
+    background: rgb(207, 54, 54);
+}
+
+/*=== Estilos información de la página ===*/
+.section-informacion{
+    margin-top: 100px;
+    margin-bottom: 120px;
+    overflow: hidden;
+}
+
+.section-informacion .cont{
+    margin-bottom: 70px;
+}
+
+.page-info{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.page-info p{
+    font-size: 1.4rem;
+    color: rgb(77, 72, 72);
+}
+
+.cont-cajas-productos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caja{
+    width: 30%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    margin-bottom: 25px;
+}
+
+.caja1{
+    background: linear-gradient(45deg, rgb(247, 8, 8), rgb(231, 102, 27));
+}
+.caja2{
+    background: linear-gradient(45deg,rgb(43, 84, 207), rgb(187, 182, 182));
+}
+.caja3{
+    background: linear-gradient(45deg, rgb(23, 167, 66), rgb(131, 214, 167));
+}
+
+.caja p{
+    font-size: 2rem;
+    color: rgb(224, 217, 217);
+    padding-left: 12px;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.cont-btn-ver-productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-btn-ver-productos a{
+    padding: 15px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background: red;
+    border-radius: 200px;
+    background: linear-gradient(90deg,rgb(221, 6, 41), rgb(51, 51, 187), rgb(226, 70, 23), rgb(241, 190, 50), 
+    rgb(221, 6, 41));
+    background-size: 400%;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.cont-btn-ver-productos a:hover{
+    animation: animate 8s linear infinite;
+    box-shadow: 4px 2px 35px 3px rgba(0,0,0,.75);
+}
+
+/*=== Sepradador entre contenidos ===*/
+.cont-separador{
+    width: 100%;
+    height: 270px;
+    background: url("../img/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.separador{
+    position: relative;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separador h3{
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 2.6rem;
+    color: white;
+    text-shadow: 5px 5px 4px rgb(51, 50, 50);
+}
+
+.cont-separador::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    background: linear-gradient(45deg, rgb(153, 6, 18), rgb(11, 56, 122));
+    opacity: 0.5;
+}
+
+.separador .separador-texto{
+    z-index: 1;
+}
+
+/*=== Información de los artículos ===*/
+.cajas-informacion{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    overflow: visible;
+}
+.section-boxes{
+    display: flex;
+}
+
+.boxes{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.boxes .box{
+    margin-bottom: 15px;
+    position: relative;
+    width: 30%;
+    height: 400px;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 7px 12px 23px 13px rgba(0,0,0,.3);
+}
+
+.boxes .box:hover{
+    box-shadow: -10px 50px 100px rgba(0,0,0,.5);
+}
+
+.boxes .bg{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    background: #000;
+    transition: 0.5s;
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+}
+
+.boxes .box.box1:hover ~ .bg, .boxes .box.box1:hover{
+    opacity: 1;
+    background: linear-gradient(#03A9F4, #E91E63);
+}
+
+.boxes .box.box2:hover ~ .bg, .boxes .box.box2:hover{
+    opacity: 1;
+    background: linear-gradient(rgb(79, 55, 184), rgb(10, 201, 41));
+}
+
+.boxes .box.box3:hover ~ .bg, .boxes .box.box3:hover{
+    opacity: 1;
+    background: linear-gradient(rgb(244, 3, 3), rgb(235, 103, 26));
+}
+
+.box:hover{
+    color: #fff;
+}
+
+.boxes .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.2);
+    pointer-events: none;
+}
+
+.boxes .box::after{
+    content: url('../img/Iconos/icono-regalo.png');
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    opacity: .2;
+    background: rgba(255,255,255,.2);
+    pointer-events: none;
+}
+
+.boxes .box2::after{
+    content: url('../img/Iconos/icono-temporada.png');
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    opacity: .2;
+    background: rgba(255,255,255,.2);
+    pointer-events: none;
+}
+
+.boxes .box3::after{
+    content: url('../img/Iconos/icono-enviar.png');
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    opacity: .2;
+    background: rgba(255,255,255,.2);
+    pointer-events: none;
+}
+
+.boxes .box h4{
+    padding-bottom: 15px;
+}
+
+.cont-btn-conoce-mas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-btn-conoce-mas a{
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 200px;
+    background: linear-gradient(90deg,rgb(6, 99, 221), rgb(122, 20, 180), rgb(206, 226, 23), rgb(6, 221, 71), 
+    rgb(6, 99, 221));
+    background-size: 400%;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.cont-btn-conoce-mas a:hover{
+    animation: animate 8s linear infinite;
+    box-shadow: 4px 2px 35px 3px rgba(0,0,0,.75);
+}
+
+/*===  Parallax ===*/
+.section-parallax{
+    position: relative;
+    width: 95%;
+    height: 600px;
+    border-radius: 0 25vw 25vw 0;
+    overflow: hidden;
+}
+
+.cont-parallax{
+    position: absolute;
+    width: 100%;
+    height: 190vh;
+    background: url("../img/fondo3.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-linear-gradient{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(90deg,rgba(190, 4, 13, 0.938),rgba(38, 51, 231, 0.842), rgba(170, 168, 168, 0.753));
+}
+
+.cont-texto-parallax{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.texto-parallax{
+    max-width: 600px;
+    color: rgb(233, 239, 240);
+    font-family: 'Inria Sans', sans-serif;
+    margin-right: 50px;
+}
+
+.texto-parallax h4{
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+
+.texto-parallax {
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+/*=== Media Query ===*/
+
+/* Adaptar los margenes */
+@media (max-width:890px){
+    /* Media Query de información de los productos */
+    .boxes{
+        flex-direction: column;
+    }
+    .boxes .box{
+        width: 100%;
+    }
+    .boxes .bg{
+        height: 200vh;
+    }
+}
+/* Media Query de información de la página */
+@media (max-width: 1080px){
+    .cont-cajas-productos{
+        flex-direction: column;
+    }
+    .caja{
+        width: 100%;
+    }
+}
+/*=== Animaciones ===*/
+
+/* Animación del titulo de los contenidos */
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+    }
+}
+/* Animación de las cajas con información rápida de la página */
+@keyframes animation-caja{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Animación de el sparador */
+@keyframes animacion-separador{
+    0%{
+        transform: rotateY(90deg);
+    }
+}
+/* Animación de las cajas con información de los productos */
+@keyframes animation-box{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Animación del contenido del parallax */
+@keyframes animation-parallax-titulo{
+    0%{
+        transform: translateY(100%);
+    }
+}
+/* Animación de los botones */
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}

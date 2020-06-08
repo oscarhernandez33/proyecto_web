@@ -1,0 +1,187 @@
+/*=== Fuentes ===*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+/*=== Estilos del footer ===*/
+footer{
+    margin-top: 120px;
+}
+
+.cont-footer{
+    width: 100%;
+    background: rgb(58, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.forma{
+    width: 50%;
+    height: 50px;
+    background: linear-gradient(90deg,rgb(143, 8, 8),rgb(236, 54, 70));
+    transform: translateY(25px);
+    border-radius: 0 250px 250px 0;
+}
+
+.titulo-redes{
+    margin-top: 50px;
+}
+
+.titulo-redes h4, .titulo-contacto h4{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    color: rgb(183, 186, 189);
+}
+
+
+/* Estilo redes sociales */
+.iconos-redes{
+    display: flex;
+    width: 225px;
+    margin-top: 9px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.iconos-redes .icono{
+    background: rgb(44, 42, 42);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .5s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .2);
+}
+
+.iconos-redes .icono-facebook:hover{
+    background: linear-gradient(45deg, blue, rgb(41, 41, 199), rgb(19, 139, 175), blue);
+    background-size: 200%;
+    animation: botones 8s linear infinite;
+    transform: translateY(-10px);
+}
+.iconos-redes .icono-twiter:hover{
+    background: linear-gradient(45deg, rgb(117, 146, 190), rgb(63, 142, 160), rgb(55, 68, 87));
+    background-size: 200%;
+    animation: botones 8s linear infinite;
+    transform: translateY(-10px);
+}
+.iconos-redes .icono-instagram:hover{
+    background: linear-gradient(45deg, rgb(230, 54, 10), rgb(202, 18, 5), rgb(175, 19, 123), rgb(40, 40, 206),
+    rgb(230, 54, 10));
+    background-size: 200%;
+    animation: botones 8s linear infinite;
+    transform: translateY(-10px);
+}
+
+.iconos-redes a i{
+    color: rgb(239, 243, 245);
+    font-size: 1.2rem;
+    animation: botones linear infinite;
+}
+
+/*=== Formulario de contacto ===*/
+.titulo-contacto{
+    margin-top: 12px;
+    background: rgb(42, 42, 43);
+    width: 100%;
+}
+
+.titulo-contacto h4{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cont-form-contacto{
+    width: 100%;
+    background: rgb(42, 42, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario-contacto{
+    margin: 20px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(36, 36, 37);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.formulario-contacto input, .formulario-contacto textarea{
+    width: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: rgb(224, 236, 238);
+    margin-top: 20px;
+}
+
+.formulario-contacto input[type="submit"]{
+    width: 60%;
+    padding: 10px;
+    margin-top: 12px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(45deg,red,purple);
+    border-radius: 100px;
+}
+
+/* Información del futter */
+.fin-footer{
+    display: flex;
+    margin: 20px 0;
+}
+
+.fin-footer a{
+    margin-right: 20px;
+    color: rgb(232, 237, 238);
+}      
+.fin-footer a:hover{
+    color: gray;
+}
+.fin-footer .lc{
+    margin-right: 0;
+}
+.creditos p{
+    color: white;
+}
+
+/*=== Media Query ===*/
+@media (max-width:674px){
+    .fin-footer{
+        flex-direction: column;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .fin-footer a{
+        margin: 0;
+    }
+    .formulario-contacto{
+        width: 85%;
+    }
+}
+
+/*=== Animaciones ===*/
+@keyframes animation-forma{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animacion-iconos{
+    0%{
+        transform: rotateY(90deg) scale(1);
+    }
+}

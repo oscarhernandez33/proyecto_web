@@ -1,0 +1,414 @@
+/*=== Fuentes ===*/
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+/*=== Estilo del menu ===*/
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu{
+    padding: 0 20px;
+    width: 100%;
+    background: rgb(37, 37, 37);
+    z-index: 100;
+}
+
+.fondo{
+    background-color: rgb(51, 51, 51);
+}
+
+.contenedor{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilo del titulo */
+.menu .logo .titulo{
+    font-size: 23px;
+    color: rgb(241, 91, 104);
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 2px 2px 2px rgb(69, 69, 70);
+}
+
+.menu .logo{
+    flex: 1;
+}
+
+/* Buscador */
+.buscador-responsive{
+    cursor: pointer;
+    display: none;
+}
+
+.buscador-responsive i{
+    display: flex;
+    font-size: 22px;
+    margin-right: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscador{
+    display: flex;
+}
+
+.cont-buscar{
+    width: 100%;
+}
+
+.cont-buscar input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 2px 2px 2px 10px;
+    border-radius: 15px 0 0 15px;
+}
+
+.btn-buscar{
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    background: rgb(156, 155, 155);
+}
+
+.btn-buscar:hover{
+    background: rgb(121, 119, 119);
+}
+
+.btn-buscar i{
+    font-size: 15px;
+    padding: 2px 5px;
+    color: white;
+}
+
+/* Estilo del boton del menu */
+.menu .menu-nav-toggle{
+    height: 27px;
+    width: 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .menu-nav-toggle:focus{
+    outline: none;
+}
+
+.menu .menu-nav-toggle span{
+    height: 2px;
+    width: 16px;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.menu .menu-nav-toggle.close span{
+    background-color: transparent;
+}
+
+.menu .menu-nav-toggle span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateY(-6px);
+    transition: all .3s ease;
+}
+
+.menu .menu-nav-toggle.close span::before{
+    transform: translateY(0) rotate(45deg);
+}
+
+.menu .menu-nav-toggle span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateY(6px);
+    transition: all .3s ease;
+}
+
+.menu .menu-nav-toggle.close span::after{
+    transform: translateY(0) rotate(-45deg);
+}
+
+.alinear-items{
+    align-items: center;
+}
+
+.menu .menu-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu .menu-nav ul > li{
+    padding: 10px 0;
+    margin: 0 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu .menu-nav ul > li:last-child{
+    margin-right: 0;
+}
+
+.menu .menu-nav ul > li > a{
+    padding: 3px 7px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu .menu-nav ul > li > a > i{
+    font-size: 20px;
+    display: inline-flex;
+    transform: translateY(4px);
+}
+
+.menu .menu-nav ul > .item > a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(202, 41, 89);
+
+    transition: width 0.3s ease;
+}   
+.menu .menu-nav ul > .item > a:hover::before{
+    width: 100%;
+}
+
+/* Botones ingresar y carrito */
+.ingresar a{
+    background: rgb(197, 19, 34);
+    border-radius: 15px;
+    border: 1px solid rgb(197, 19, 34);
+}
+.ingresar a:hover{
+    background: rgb(216, 20, 36);
+    border: 1px solid rgb(216, 20, 36);
+}
+.carrito a{
+    border-radius: 15px;
+    border: 1px solid rgb(197, 19, 34);
+    transition: all .3s;
+}
+.carrito a:hover{
+    background: rgb(216, 20, 46);
+    border: 1px solid rgb(216, 20, 46);
+}
+
+.carrito a i{
+    margin-right: 13px;
+}
+
+.carrito a span{
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    color: white;
+    background: rgb(204, 30, 53);
+    transform: translate(-21px,1px);
+    position: absolute;
+}
+
+.carrito-responsive{
+    margin-right: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.carrito-responsive a{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(2px);
+}
+.carrito-responsive a:hover{
+    text-decoration: none;
+}
+.carrito-responsive i{
+    font-size: 23px;
+}
+
+.carrito-responsive > a > span{
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin-left: 3px;
+    color: white;
+    background: rgb(204, 30, 53);
+    transform: translate(-7px,-6px);
+}
+
+/* Estilos de los submenus */
+.menu .menu-nav ul > li > .sub-menu{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 200px;
+    top: 100%;
+    left: 0;
+    border-top: 3px solid crimson;
+    margin: 10px 0 0 0;
+    padding: 0;
+    /*list-style: none;*/
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu .menu-nav ul > li:hover > .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}   
+
+.menu .menu-nav ul > li > .sub-menu > li{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .menu-nav ul > li > .sub-menu > li > a::before{
+    content: none;
+}
+
+.menu .menu-nav ul > li > .sub-menu > li > a{
+    color: #111111;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.menu .menu-nav ul > li > .sub-menu > li > a:hover{
+    background: rgb(207, 206, 206);
+}
+
+/*=== Menu responsive ===*/
+@media (max-width:890px){
+    .menu{
+        padding: 10px 15px;
+    }
+    .menu .menu-nav-toggle{
+        display: flex;
+    }
+    .menu .menu-nav{
+        max-height: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+        overflow: hidden;
+
+        transition: all 0.5s ease;
+    }
+    .menu .menu-nav.open{
+        display: block;
+    }
+    .menu .menu-nav ul{
+        background-color: #222222;
+        margin-top: 15px;
+    }
+    .menu .menu-nav ul > li{
+        display: block;
+        margin: 0;
+        padding: 0px 0px;
+    }
+    .menu .menu-nav ul > li > a{
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(255,255,255, 0.4);
+    }
+    .menu .menu-nav ul > .item > a::before{
+        content: none;
+    }
+    .menu .menu-nav ul > li > .sub-menu{
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+        margin: 0;
+        visibility: visible;
+        opacity: 1;
+        background-color: transparent;
+        background: rgb(55, 55, 56);
+        border: none;
+    }
+    .menu .menu-nav ul > li > .sub-menu > li > a{
+        color: #fff;
+        padding: 14px 20px 12px 40px;
+    }
+
+    .carrito a, .ingresar a{
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+    }
+    .ingresar a:hover, .carrito a:hover{
+        background: none;
+        border: none;
+    }
+    .carrito-responsive{
+        display: flex;
+    }
+
+    /* Buscador Responsive */
+    .cont-buscador{
+        width: 100%;
+        margin-top: 10px;
+        display: none;
+        transition: 0.5s ease;
+    }
+    .buscador-responsive{
+        display: block;
+    }
+    .cont-buscador.open{
+        display: block;
+    }
+
+    .menu .contenedor .menu-nav .carrito{
+        display: none;
+    }
+}
+
+@media (max-width:285px){
+    .carrito-responsive{
+        display: none;
+    }
+    .menu .contenedor .menu-nav .carrito{
+        display: blockq;
+    }
+}

@@ -1,0 +1,289 @@
+/*===== Estilos apartado de contacto =====*/
+
+/*=== Fuentes de texto ===*/
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
+/*=== Banner ===*/
+.banner-contacto{
+    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+    width: 100%;
+    height: 65vh;
+}
+
+.banner-contacto .cont-banner{
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    background: url("../img/fondo5.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-imagen{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,rgba(44, 44, 44, 0.822),rgba(15, 3, 126, 0.808),rgba(156, 154, 154, 0.712));
+}
+
+.fondo-imagen .titulo-banner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo-imagen .titulo-banner h2{
+    font-family: 'Abel', sans-serif;
+    color: white;
+    font-size: 2.7rem;
+}
+
+/*=== Estilo sección medios de contacto ===*/
+.section-medios-contacto{
+    margin-top: 150px;
+    overflow: visible;
+}
+.section-medios-contacto h3{
+    text-align: center;
+    font-size: 2rem;
+    position: relative; 
+}
+.section-medios-contacto h3::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: rgb(209, 14, 14);
+    bottom: 0;
+    transform: translate(100%,30px);
+}
+.section-medios-contacto .medios-contacto{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.medios-contacto .cont-medios{
+    width: 43%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 2px 3px 20px 3px rgba(0,0,0,0.75);
+}
+
+.cont-medios .cont-icono{
+    width: 35%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-medios .cont-icono i{
+    font-size: 50px;
+}
+
+.cont-medios .cont-texto{
+    width: 65%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-left: 30px;
+}
+
+.cont-medios .cont-texto h4{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.cont-medios .cont-texto p{
+    font-size: 1.4rem;
+}
+
+.cont-medios .telefono-icono{
+    background: rgb(55, 55, 56);
+}
+.cont-medios .telefono-icono i{
+    color: white;
+}
+
+.cont-medios .telefono-text{
+    background: white;
+}
+
+.cont-medios .email-text{
+    background: rgb(52, 52, 53);
+}
+
+.cont-correo .email-text{
+    color: rgb(211, 210, 221);
+}
+
+/*=== Estilos separador redes sociales ===*/
+.section-separador-redes{
+    width: 100%;
+    margin: 100px 0;
+    background: url("../img/separador3.jpg");
+    background-attachment: fixed;
+}
+
+.cont-redes-sociales{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-redes-sociales .cont-icono{
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 3px 20px 3px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: .3s;
+}
+.cont-redes-sociales .cont-icono:hover{
+    transform: translateY(30px);
+}
+.cont-redes-sociales .cont-icono-facebook{
+    background: linear-gradient(45deg, rgb(69, 69, 204), rgb(53, 53, 216),rgb(57, 180, 252), rgb(71, 71, 194)); 
+}
+.cont-redes-sociales .cont-icono-twiter{
+    background: linear-gradient(45deg, rgb(155, 184, 212),rgb(64, 114, 207),rgb(43, 139, 202), rgb(134, 176, 216));  
+}
+.cont-redes-sociales .cont-icono-instagram{
+    background: linear-gradient(45deg, rgb(226, 70, 9), rgb(207, 14, 14), rgb(255, 0, 76),rgb(68, 96, 223));
+}
+.cont-redes-sociales .cont-icono a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.cont-redes-sociales .cont-icono a i{
+    font-size: 2rem;
+    color: white;
+}
+
+/*=== Estilos sección enviar mensaje ===*/
+.section-enviar-mensaje{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    background: rgb(41, 41, 46);
+}
+.section-enviar-mensaje h3{
+    text-align: center;
+    font-size: 2rem;
+    position: relative; 
+    padding: 50px 0;
+    color: rgb(200, 214, 214);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.cont-enviar-mensaje{
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+.form-enviar-mensaje{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(29, 28, 28);
+    width: 80%;
+    padding: 20px 0;
+    margin: 20px 0;
+    box-shadow: 2px 3px 20px 3px rgba(0,0,0,0.75);
+}
+.form-enviar-mensaje input, .form-enviar-mensaje textarea{
+    margin: 10px 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.form-enviar-mensaje .input{
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.form-enviar-mensaje .input-btn{
+    cursor: pointer;
+    background: rgb(221, 25, 25);
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+}
+.form-enviar-mensaje .input-btn:hover{
+    background: rgb(172, 12, 12);
+}
+
+/*=== Media Query ===*/
+@media (max-width:890px){
+    .section-medios-contacto .medios-contacto{
+        flex-direction: column;
+    }
+    .medios-contacto .cont-medios{
+        width: 100%;
+    }
+    .form-enviar-mensaje{
+        width: 100%;
+    }
+}
+
+/*=== Animaciones ===*/
+
+/* Animación del los títulos del banner */
+@keyframes banner-titulo{
+    0%{
+        margin-top: 100px;
+        opacity: 0;
+    }
+    30%{
+        color: rgb(70, 67, 238);
+    }
+    80%{
+        color: rgb(79, 75, 122);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Animación del titulo de los contenidos */
+@keyframes mover{
+    0%{
+        transform: translateY(100%);
+    }
+}
+/* Animación del contenedor de los iconos de medios de contacto */
+@keyframes animation-cont-icono{
+    0%{
+        transform: rotateY(45deg);
+    }
+}
+@keyframes animation-cont-medios{
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes animation-cont-text{
+    0%{
+        transform: translateY(-50%);
+    }
+}
+/* Animación Iconos redes sociales */
+@keyframes animation-redes-sociales{
+    0%{
+        transform: rotateY(45deg);
+    }
+}
+/* Animación formulario */
+@keyframes animation-titulo-form{
+    0%{
+        transform: translateY(-50%);
+    }
+}

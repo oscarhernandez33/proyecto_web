@@ -1,0 +1,42 @@
+/*===== Estilos del panel de control de la página =====*/
+
+/*=== Fuentes ===*/
+
+/*=== Sección de productos ===*/
+.encabezado-productos{
+    background: linear-gradient(90deg, rgba(38,45,130,1) 0%, rgba(47,47,139,1) 0%, rgba(0,212,255,1) 94%);
+    color: white;
+}
+
+.cont-productos{
+    width: 100%;
+}
+
+/* Eliminar productos */
+.cont-eliminar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cont-eliminar .eliminar{
+    width: 500px;
+    height: 250px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(163, 162, 162);
+    border-radius: 20px;
+}   
+
+.eliminar h3{
+    margin-bottom: 50px;
+}
+
+/* Editar productos */
+.cont-editar{
+    margin-top: 15px;
+}

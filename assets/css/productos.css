@@ -1,0 +1,196 @@
+/*===== Estilo de la sección productos =====*/
+
+/*=== Fuentes ===*/
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+/*=== Banner de la sección ===*/
+.section-banner-productos{
+    width: 100%;
+    height: 200px;
+    background: url("../img/separador3.jpg");
+    background-attachment: fixed;
+}
+
+.cont-banner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-banner h2{
+    margin-top: 50px;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    font-size: 2.7rem;
+}
+
+/*=== Sección de la tienda ===*/
+.cont-tienda{
+    display: flex;
+    margin-top: 100px;
+    overflow: visible;
+}
+
+/* Apartado categorías */
+.cont-tienda .cont-categorias{
+    width: 20%;
+}
+
+.titulo-categorias{
+    background: rgb(29, 54, 77);
+    padding: 5px 15px;
+    color: rgb(240, 244, 245);
+    font-weight: 0;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-categorias h4{
+    flex: 1;
+    font-size: 20px;
+}
+
+.titulo-categorias i{
+    display: none;
+}
+
+.cont-lista-categorias{
+    border: 0.5px solid rgb(180, 180, 184);
+    transition: 0.5s;
+}
+
+.cont-lista-categorias .lista-categorias{
+    padding: 10px 15px;
+}
+
+.lista-categorias li{
+    margin-bottom: 6px;
+}
+
+/* Apartado productos */
+.cont-tienda .cont-productos{
+    width: 80%;
+    padding-left: 23px;
+}
+
+.lista-productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.lista-productos .card{
+    /*box-shadow: 0px 1px 11px 2px rgba(0,0,0,0.49);*/
+    box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.75);
+    margin-bottom: 27px;
+    transition: all;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.lista-productos .card img{
+    height: 285px;
+}
+
+.card-body p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(73, 72, 72);
+}
+
+.card-body .btn-deseados{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.card-body .form-deseados button i{
+    align-self: flex-end;
+    color: rgb(223, 61, 61);
+    cursor: pointer;
+}
+
+.card-body .form-deseados button i:hover{
+    color: rgb(206, 32, 32);
+}
+
+.card-body a{
+    margin-left: 5px;
+}
+
+.card-body .form-deseados{
+    position: absolute;
+    transform: translate(50px,-40px);
+}
+
+.form-deseados button{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.cont-productos nav{
+    display: none;
+}
+
+/*=== Tarjeta de productos apartado busqueda ===*/
+.section-resultados-busqueda{
+    padding-top: 100px;
+}
+.section-resultados-busqueda h2{
+    margin-bottom: 50px;
+}
+.cont-resultados-busqueda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cont-resultados-busqueda .card{
+    margin: 20px 50px;
+    box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.75);
+}
+
+/*=== Estilo ventanas modal ===*/
+.icon-checkmark-circled{
+    color: rgb(46, 165, 46);
+}
+
+.icon-warning-alt{
+    color: rgb(214, 55, 55);
+}
+
+/*=== Media Query ===*/
+@media (max-width:1002px){
+    /* Adpatar el contenido a dispositivos móviles */
+    .cont-tienda{
+        flex-direction: column;
+    }
+    /* Adaptar categorías */
+    .cont-tienda .cont-categorias{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .cont-lista-categorias .lista-categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ocultar-categoria{
+        display: none;
+    }
+    .titulo-categorias{
+        cursor: pointer;
+    }
+    .titulo-categorias i{
+        display: block;
+    }
+    /* Adpatar los productos */
+    .cont-tienda .cont-productos{
+        width: 100%;
+        padding: 0;
+    }    
+    .cont-tienda .cont-productos .lista-productos{
+        justify-content: space-evenly;
+    }
+}

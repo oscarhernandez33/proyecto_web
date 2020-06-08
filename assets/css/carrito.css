@@ -1,0 +1,122 @@
+/*=== Estilos del carrito de compras ===*/
+
+/*=== Fuentes ===*/
+
+/*=== Sección del carrito ===*/
+.section-carrito{
+    padding-top: 100px;
+}
+
+.section-carrito h2{
+    position: relative;
+}
+.section-carrito h2::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: rgb(209, 14, 14);
+    bottom: 0;
+    transform: translate(80%,23px);
+}
+
+.cont-carrito{
+    margin-top: 100px;
+    display: flex;
+}
+
+.cont-carrito .cont-tabla-carrito{
+    width: 50%;
+}
+
+.cont-carrito .cont-procesar-carrito{
+    width: 50%;
+    background: rgb(230, 224, 224);
+}
+
+.from-control{
+    width: 50px;
+    text-align: center;
+}
+
+/* Datos carrito */
+.procesar-carrito .titulo-datos-carrito{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 0.6px solid rgb(188, 188, 194);
+}
+
+.contenido-procesar-pedido{
+    padding: 0 50px;
+    margin-bottom: 25px;
+}
+
+.total-carrito{
+    font-size: 1.4rem;
+}
+
+/* Carrito action */
+.carrito-action{
+    padding: 0 80px;
+}
+
+.btn-action{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    background: rgb(121, 120, 120);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.btn-action:hover{
+    box-shadow: -1px 3px 31px -7px rgba(0,0,0,0.75);
+}
+
+.btna2{
+    background: rgb(53, 77, 129);
+}
+
+/*=== Carrito vacio ===*/
+.carrito-vacio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px 0;
+    background: rgb(201, 199, 199);
+    border-radius: 20px;
+}
+
+.carrito-vacio i{
+    font-size: 5rem;
+    color: gray;
+}
+
+.carrito-vacio p{
+    font-size: 2rem;
+    color: rgb(38, 38, 39);
+}
+
+/*=== Media Query ===*/
+@media (max-width:954px){
+    .cont-carrito{
+        flex-direction: column;
+    }
+    .cont-carrito .cont-tabla-carrito{
+        width: 100%;
+    }
+    .cont-carrito .cont-procesar-carrito{
+        width: 100%;
+    }
+    .mensaje-deslizar::before{
+        content: "Deslizar a la derecha para ver detalles";
+    }
+}
